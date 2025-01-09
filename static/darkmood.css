@@ -1,0 +1,30 @@
+/* استایل برای دکمه سوئیچ */
+.toggle-wrapper {
+    width: 60px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-checkbox:checked + .toggle-wrapper {
+    background-color: #4CAF50; /* رنگ سبز برای حالت روشن */
+  }
+  
+  .toggle-checkbox:checked + .toggle-wrapper .toggle-circle {
+    transform: translateX(30px); /* حرکت دایره به راست */
+  }
+  
+  .toggle-circle {
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s ease;
+  }
+  
